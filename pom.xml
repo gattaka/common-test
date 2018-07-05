@@ -1,9 +1,7 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>cz.gattserver</groupId>
 	<artifactId>common-test</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Common test</name>
 	<description>Common test dps.</description>
@@ -12,6 +10,18 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<org.springframework.version>4.3.6.RELEASE</org.springframework.version>
 	</properties>
+
+	<parent>
+		<groupId>cz.gattserver</groupId>
+		<artifactId>gattserver-parent</artifactId>
+		<version>1.0.8</version>
+	</parent>
+
+	<scm>
+		<connection>${scm.base.url}/common-test</connection>
+		<developerConnection>${scm.base.url}/common-test</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 
 	<dependencies>
 
@@ -68,8 +78,7 @@
 
 	</dependencies>
 
-	<!-- http://www.baeldung.com/spring-maven-bom We don’t need to specify the 
-		version attribute when we use the Spring artifacts -->
+	<!-- http://www.baeldung.com/spring-maven-bom We don’t need to specify the version attribute when we use the Spring artifacts -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
