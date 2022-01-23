@@ -23,7 +23,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<org.springframework.version>5.3.14</org.springframework.version>
-		<!-- <org.springframework.version>5.2.9.RELEASE</org.springframework.version> -->
 		<!-- <mockserver.version>5.11.2</mockserver.version> -->
 		<mockserver.version>5.5.4</mockserver.version>
 		<!-- <junit.version>5.8.2</junit.version> -->
